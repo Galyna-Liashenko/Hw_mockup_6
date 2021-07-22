@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    flex-grow: 1;
+    &__title{
+        text-transform: uppercase;
+    }
+    &__content{
+       
+       @media (min-width:768px) {
+        display: flex;
+           
+       }
+        flex-grow: 1;
+        padding: 0px;
+    }
+    &__sidebar--left{
+        order: -1;
+        background-color:$aside-left;
+    }
+    &__sidebar--right{
+        background-color:$aside-right;
+    }
+    &__sidebar{
+        width: 100%;
+        text-align: center;
+        margin:0;
+        @media (min-width:320px) {
+       
+            h4{
+             margin: 0 ;
+            padding: 20px 0 ;
+               //height: 100%;
+              // text-align: center;
+            } 
+           }
+        
+        }
+    &__text{
+        padding: 20px;
+        text-align: center;
+    }
+    &__text1{
+        font-weight: 400;
+    }
+    
+}
